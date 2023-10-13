@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konsep Database</title>
+    </head>
+    <body>
+        /*Constraint NOT NULL*/
+        CREATE TABLE `mahasiswa`(
+        `nama` VARCHAR(50), NOT NULL,
+        `nim` VARCHAR(30) NOT NULL  
+        )
+
+        /*Constraint NOT NULL UNIQUE*/
+        CREATE TABLE `mahasiswa`(
+        `nama` VARCHAR(50) NOT NULL,
+        `nim` VARCHAR(50) NOT NULL UNIQUE
+        )
+
+        /*Constraint AUTO INCREMENT*/
+        CREATE TABLE `mahasiswa`(
+        `id` VARCHAR(11) NOT NULL AUTO_INCREMENT,
+        `nama` VARCHAR(50) NOT NULL,
+        `nim` VARCHAR(50) NOT NULL UNIQUE
+        )
+    </body>
+</html>
